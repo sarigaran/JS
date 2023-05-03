@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <style>
+        .container {
+            margin: 0 auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Paskal</title>
+
+    <script>
+
+        function pascals() {
+            var Rows = document.getElementById('Rows').value;
+
+            let result = [];
+            for (let i = 1; i <= Rows; i++) {
+                let array = [];
+                for (let j = 0; j < i; j++) {
+                    if (j === 0 || j === i - 1) {
+                        array.push(1);
+                    } else {
+                        array.push((result[i - 2][j - 1] + result[i - 2][j]));
+                    }
+                }
+                result.push(array);
+
+            }
+            document.getElementById('pascal').innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="Enter number of rows for pascal Triangle" style="width:80%" id="Rows">
+        <button onClick="pascals() ">Click</button>
+        <div id="pascal"></div>
+    </div>
+</body>
+
+</html>

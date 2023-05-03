@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The best way to loop through an array is using a standard for loop:</p>
+
+<p id="demo"></p>
+<p id="de"></p>
+<p id="sort"></p>
+<p id="revere"></p>
+<p id="de1"></p>
+<p id="de2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const point =[12,45,78,12,45,78,95,6,4,45,2,5]
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+document.getElementById("de").innerHTML = fruits[0];
+function fun(){
+    alert("hello")
+}
+document.getElementById("de").innerHTML=fruits;
+fruits.sort();
+document.getElementById("sort").innerHTML=fruits;
+fruits.reverse();
+document.getElementById("revere").innerHTML=fruits;
+
+function push(){
+    fruits.push("lemon");
+    document.getElementById("de").innerHTML=fruits;
+
+}
+document.getElementById("de1").innerHTML = point;
+
+point.sort(function(a, b){return b - a});
+document.getElementById("de2").innerHTML = point;
+
+
+</script>
+<button onclick="fun()">alert</button>
+<button onclick="push()">push</button>
+
+<button onclick="sort()">sort</button>
+
+</body>
+</html>

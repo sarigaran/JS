@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #in1,
+        #fin {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Choose the Button </h2>
+    <button id="1" name="Button1" value="sslc" onclick="f(this.value)">
+        SSLC
+    </button>
+    <button id="2" name="Button2" value="hsc" onclick="f(this.value)">
+        HSC
+    </button><br><br>
+    <H2 id="message1"></H2><br><br>
+    <input type="text" id="in1" placeholder="enter the 10 mark">
+
+    <button onclick="g()" id="fin"> FIND</button>
+    <H2 id="message1">
+        <h3 id="message2"></h3>
+        <script>
+            function f(val) {
+
+                if (val == "sslc") {
+                    document.getElementById("message1").innerHTML = "enter the 10 th (SSLC)mark";
+                    document.getElementById("in1").style.visibility = "visible";
+                    document.getElementById("fin").style.visibility = "visible";
+
+                    g = () => {
+                        var mark = Number(document.getElementById("in1").value);
+
+                        document.getElementById("message2").innerHTML = mark / 5;
+                    }
+                }
+                else if (val == "hsc") {
+                    document.getElementById("message1").innerHTML = "enter the 12 th (HSC) mark";
+                    var mark = Number(document.getElementById("in1").value);
+                    document.getElementById("in1").style.visibility = "visible";
+                    document.getElementById("fin").style.visibility = "visible";
+
+                    g = () => {
+                        document.getElementById("message2").innerHTML = mark / 12;
+                    }
+                }
+                else {
+                    document.getElementById("message2").innerHTML = "choose any one";
+                }
+
+            }
+
+
+        </script>
+</body>
+
+</html>

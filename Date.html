@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<script>
+
+function date(){
+document.getElementById('demo').innerHTML=Date()
+}
+function change(){
+
+document.getElementById('de').innerHTML="script"
+}
+function aler(){
+alert("hello")
+}
+function on(){
+document.getElementById("img").src="https://thumbs.dreamstime.com/b/vector-light-bulb-white-file-eps-format-34983265.jpg"
+}
+function off(){
+document.getElementById("img").src="https://img.freepik.com/premium-photo/turn-tungsten-light-bulb-isolated-white_45716-9.jpg?w=2000";
+}
+function display(){
+document.getElementById('dis').style.display='block'
+}
+</script>
+<body>
+<h1>java script</h1>
+<button type='button' onclick="date()">click me</button>
+<p id='demo'></p>
+<p>java <span id="de"></span></p>
+<button type="button" onclick="change()">change</button>
+<button type="button" onclick="aler()">alert</button>
+<button onclick="on()">on</button>
+<img id="img" src="https://img.freepik.com/premium-photo/turn-tungsten-light-bulb-isolated-white_45716-9.jpg?w=2000" style="width:100px">
+
+<button onclick="off()">off</button>
+<button onclick="display()">show</button>
+<p id="dis" style="display:none">Hello JavaScript!</p>
+</body>
+</htm>
+
+
+
+

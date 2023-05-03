@@ -1,0 +1,61 @@
+body{
+    margin: auto;
+background-color: sandybrown; 
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 200px;   
+}
+
+h3{
+    color:black;
+}
+input{
+    border-radius: 20px;
+    padding: 10px;
+}
+button{
+    color: black;
+    background-color: green;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+<style>
+.container {
+    margin: 0 auto;
+}
+
+.block {
+    display: inline-block;
+    position: relative;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: .8em;
+    width: 2em;
+}
+
+.divblock {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#pascal {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block:nth-child(odd) {
+    background: cyan;
+}
+
+.block:nth-child(even) {
+    background: grey;
+}
+</style>

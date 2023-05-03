@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percentage calculator</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <button onclick="sslc_per_finder()" id="10th">10 th</button>
+
+    <button onclick="hsc_per_finder()">12 th</button>
+
+    <input type="number" id="mark" >
+    <p id="demo"></p>
+    <script>
+        var mark=Number(document.getElementById("mark").value);
+        sslc_per_finder = () => {
+          
+            document.getElementById("demo").innerHTML=mark / 5;
+
+           } 
+           hsc_per_finder = () =>{
+            document.getElementById("demo").innerHTML=(mark / 12) ;
+           }  
+           </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <button id="btn1" onclick="findsslc() " value="10">10th mark</button>
+    <button id="btn2" onclick="findhsc()" value="12">12th mark</button>
+    <p id="demo"></p>
+    <script>
+
+        let btn1 = document.getElementById("btn1").value;
+         let btn2 = document.getElementById("btn2").value;
+        if (btn1 == 10) {
+            document.getElementById("demo").innerHTML = btn;
+        }
+        else if (btn == 12) {
+            document.getElementById("demo").innerHTML = btn;
+        }
+        else {
+            document.getElementById("demo").innerHTML = "select one";
+        }
+    </script>
+</body>

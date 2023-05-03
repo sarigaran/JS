@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+</head>
+
+<body>
+    <input type="number">
+    <script>
+        const number1 = parseFloat(prompt("enter tne number 1"));
+        const number2 = parseFloat(prompt("enter tne number 2 "));
+        const operator = prompt("enter the operator");
+        let result;
+        if (operator == '+') {
+            result = number1 + number2;
+        }
+        else if (operator == '-') {
+            result = number1 - number2;
+        }
+       else if (operator == '*') {
+            result = number1 * number2;
+        }
+        else if(operator=='/'){
+            result = number1 / number2;
+        }
+        else{
+            alert("please enter correctly");
+            document.write("something went wrong");
+        }
+        document.write(number1 + ' '+operator+' '+ number2 + " = " + result);
+
+    </script>
+
+</body>
+
+</html>
